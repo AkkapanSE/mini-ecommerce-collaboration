@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>ราคา: ${formatPrice(product.price)} บาท</p>
+                <p>ราคา: ${formatPrice(product.price)} บาท</p> <!--เพิ่มการแสดงราคาแบบเข้าใจง่าย-->
             `;
             productList.appendChild(card);
         });
