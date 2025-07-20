@@ -42,22 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Improved Search with trim and empty input handling
     searchInput.addEventListener('keyup', () => {
-<<<<<<< HEAD
-        const searchTerm = searchInput.value.trim().toLowerCase();
 
-        if (searchTerm === '') {
-            displayProducts(allProducts); // Show all if input is empty
-            return;
-        }
-
-        const filteredProducts = allProducts.filter(product =>
-            product.name.toLowerCase().includes(searchTerm)
-        );
-
-        displayProducts(filteredProducts);
-    });
-});
-=======
         const searchTerm = searchInput.value.trim().toLowerCase(); // ตัดช่องว่าง
         //ให้แสดงสินค้าทั้งหมด
         if (searchTerm === '') {
@@ -71,4 +56,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
->>>>>>> 189c9ab (add readme & edit main.js)
