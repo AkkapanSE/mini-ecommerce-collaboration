@@ -1,7 +1,30 @@
-body { font-family: sans-serif; margin: 0; background-color: #f4f4f4; }
-header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-input[type="text"] { width: 60%; padding: 8px; }
-main {justify-content: center; padding: 1rem; }
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+}
+
+/* แสดงรายการสินค้าแบบ grid */
+main#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
 .product-card {
     background: #fff;
     border: 1px solid #ddd;
@@ -10,8 +33,31 @@ main {justify-content: center; padding: 1rem; }
     padding: 15px;
     width: 200px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* เพิ่ม transition */
+    
 }
-.product-card img { max-width: 100%; height: auto; }
-.product-card h3 { font-size: 1.1em; }
-.product-card p { color: #888; }
+
+#loader {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.product-card:hover {
+    transform: scale(1.05);/* Animation เวลา hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 1.1em;
+}
+
+.product-card p {
+    color: #888;
+}
